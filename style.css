@@ -121,3 +121,24 @@ li {
     display: block;
 }
 
+.skills-title {
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Allow positioning for tooltip */
+}
+
+.tooltip {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    padding: 5px 10px; /* Padding for the tooltip */
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+    color: #fff; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9em; /* Smaller font size */
+    white-space: nowrap; /* Prevent line wrapping */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.skills-title:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+
