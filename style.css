@@ -1,52 +1,70 @@
+/* General styling for the entire resume */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
+    color: black;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
-.resume-container {
-    max-width: 800px;
-    margin: 0 auto;
+/* Styling for the section titles */
+.section-title {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Styling for the white box with shadow */
+.section-content {
+    background-color: white;
     padding: 20px;
-    background-color: #fff;
-    border: 2px solid #d4a373;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
-.photo img {
-    float: left;
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #d4a373;
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.content {
-    overflow: hidden;
+ul li {
+    margin-bottom: 15px;
 }
 
-h1 {
-    margin-top: 0;
+ul ul {
+    margin-top: 10px;
 }
 
-h2 {
-    color: #d4a373;
+.company {
+    display: block;
+    font-style: italic;
+    color: black;
+    margin-top: 5px;
 }
 
-.job {
-    margin-bottom: 20px;
+/* Reset any link colors to black */
+a {
+    color: black;
+    text-decoration: none;
 }
 
-.job-details {
-    display: none;
-}
+/* Additional styling for small devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
 
-.job h3 {
-    cursor: pointer;
-    color: #d4a373;
-}
+    .section-title {
+        font-size: 1.2em;
+    }
 
-.job h3:hover {
-    text-decoration: underline;
+    .section-content {
+        padding: 15px;
+    }
 }

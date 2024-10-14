@@ -3,70 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demond L. Gildon Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Interactive Resume - Demond L. Gildon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="resume-container">
-        <div class="photo">
-            <img src="profile.png" alt="Demond L. Gildon">
+
+<div class="resume">
+    
+    <div class="top-section">
+        <div class="headshot-container">
+            <img src="headshot.jpg" alt="Demond L. Gildon" class="resume-headshot">
         </div>
-        <div class="content">
+        <div class="contact-info">
             <h1>Demond L. Gildon</h1>
-            <p><a href="https://linkedin.com/in/demondgildon">LinkedIn</a> | 773-240-1867 | demondg8@gmail.com | <a href="https://github.com/DLamarG">GitHub</a></p>
-
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, JavaScript, TypeScript, Git, Bash, OOP, SQL, Flask, Express, React, RestAPI, DAX, Docker, PostgreSQL</li>
-                <li>AWS, RDS, S3, CloudWatch, Hadoop, Spark, Seaborn, App Dev-Full Stack, Jupyter Notebook</li>
-            </ul>
-
-            <h2>Experience</h2>
-            <div class="job">
-                <h3 onclick="toggleDetails('job1')">IT - Consultant | Code-Fit</h3>
-                <div id="job1" class="job-details">
-                    <p><strong>System Setup:</strong> Deployed and set up Linux servers (ThinkSystem SR550/PowerEdge T340) with RAID configuration, static IP address, and SSH key-based authentication for secure remote access.</p>
-                    <p><strong>Network Security:</strong> Configured firewalls (pfSense, Cisco Meraki) and implemented VLANs, QoS, and VPNs to ensure secure and optimized network communication across multiple locations.</p>
-                    <p><strong>Cloud Integration:</strong> Configured AWS services like EC2 for hosting websites, S3 for shared drive storage, and Direct Connect for hybrid cloud integration, ensuring scalability and security.</p>
-                </div>
-            </div>
-
-            <div class="job">
-                <h3 onclick="toggleDetails('job2')">Brand Manager | Rust-Oleum</h3>
-                <div id="job2" class="job-details">
-                    <p><strong>Strategic Innovation:</strong> Led initiatives to foster innovation across Industrial platforms, aligning with corporate strategies and stakeholder needs for strategic ideation and commercialization.</p>
-                    <p><strong>Financial Management:</strong> Drove the financial performance of a $90MM portfolio with data-driven strategies, utilizing multiple CRM tools (e.g., SAP, Salesforce Reports, Salesforce Dashboard, DAX).</p>
-                    <p><strong>Strategy:</strong> Utilized Power BI to analyze consumer behavior and sales trends, transforming raw data into actionable insights for strategic direction.</p>
-                </div>
-            </div>
-
-            <div class="job">
-                <h3 onclick="toggleDetails('job3')">Product Manager | Fuchs</h3>
-                <div id="job3" class="job-details">
-                    <p><strong>Product Management:</strong> Managed the P&L for a product portfolio with 225 SKUs, driving $30MM revenue annually using analytical tools (e.g., ATD, SAP, Salesforce Analytics).</p>
-                    <p><strong>Sales Support:</strong> Developed communication materials to educate customers and sales teams on value-add positioning for 225 SKUs in the industrial portfolio.</p>
-                    <p><strong>Customer Engagement:</strong> Visited customers' facilities for product presentations and collected relative market data (25-30% travel).</p>
-                </div>
-            </div>
-
-            <h2>Open Source Projects</h2>
-            <p><strong>Red-Hawk:</strong> Threat Hunting Pipeline using Prometheus, Grafana, Security Onion, pfSense, Virtual Box, Kali, Snort for real-time network traffic analysis and intrusion detection.</p>
-            <p><strong>Stack:</strong> Continuous Integration/Deployment Pipeline using CodePipeline, CodeBuild, and CodeDeploy. Utilized Docker containers for app microservices (e.g., front-end, back-end, X-Ray, DynamoDB), and integrated performance monitoring with 3rd party SDKs (Honeycomb, Rollbar, CloudWatch).</p>
-
-            <h2>Certificates</h2>
-            <ul>
-                <li>Code Platoon: Immersive Full-Stack Software Engineer - AWS, OOP, Restful API, Web App</li>
-                <li>IBM: Cybersecurity Essentials – Data Integrity, Malware Detection, Authentication, Device Security</li>
-                <li>NVIDIA: Intro to Networking – OSI Model, TCP/IP, Ethernet</li>
-                <li>TryHackMe: Intro to Cybersecurity - Cybersecurity fundamentals, Threat Analysis, Threat Detection</li>
-            </ul>
-
-            <h2>Education</h2>
-            <p><strong>MSc Management & I-O Psychology</strong> | Benedictine University</p>
-            <p><strong>BS Biology, Minor in Chemistry</strong> | St. Francis University</p>
+            <p>Flossmoor, IL | demondg8@gmail.com | 773-240-1867 | linkedin.com/in/demondgildon | github.com/DLamarG</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <section class="resume-section" id="experience">
+        <h2>Professional Experience</h2>
+        <div id="timeline"></div> <!-- Placeholder for timeline entries -->
+    </section>
+
+    <section class="resume-section" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <span class="degree">Master of Science in Management & I-O Psychology</span>
+                <span class="school">Benedictine University</span>
+            </li>
+            <li>
+                <span class="degree">Bachelor of Science in Biology, Minor in Chemistry</span>
+                <span class="school">St. Francis University</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="resume-section" id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Code Platoon: Immersive Full-Stack Software Engineer Bootcamp (6-month program)</li>
+            <li>Jovian: Data Analysis with Python (02/2022)</li>
+            <li>CertNexus: Certified Data Science Practitioner</li>
+            <li>TryHackMe: Intro to Cybersecurity (12/2023)</li>
+        </ul>
+    </section>
+
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
+
