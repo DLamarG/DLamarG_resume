@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #d4a373;
+}
+
+.photo img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #d4a373;
+}
+
+.content {
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #d4a373;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job-details {
+    display: none;
+}
+
+.job h3 {
+    cursor: pointer;
+    color: #d4a373;
+}
+
+.job h3:hover {
+    text-decoration: underline;
+}
