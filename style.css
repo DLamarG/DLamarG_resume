@@ -1,70 +1,123 @@
-/* General styling for the entire resume */
-body {
-    font-family: Arial, sans-serif;
-    color: black;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-/* Styling for the section titles */
-.section-title {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-/* Styling for the white box with shadow */
-.section-content {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-/* List styling */
-ul {
-    list-style-type: none;
+/* General Styles */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-ul li {
-    margin-bottom: 15px;
+body, html {
+    font-family: 'Helvetica', 'Verdana', sans-serif;
+    background-color: #f8f8f8;
+    margin-left: 2em; 
+    margin-top: 1em;
 }
 
-ul ul {
-    margin-top: 10px;
+.top-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2em; 
 }
 
-.company {
+.headshot-container {
+    flex: 0 0 auto; 
+    margin-right: 2em; 
+}
+
+.contact-info {
+    flex: 1; 
+    text-align: left;
+}
+
+.resume-headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    object-fit: cover;
+}
+
+.resume-section {
+    margin-bottom: 2em;
+    padding: 1em; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    background-color: white; /* White background for the sections */
+}
+
+.resume-section h2 {
+    margin-bottom: .5em;
+    color: white; /* White font for section titles */
+    font-weight: 600;
+    background-color: #4CAF50; /* Green background for section titles */
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none; 
+}
+
+li {
+    margin-bottom: .5em;
+    line-height: 1.4;
+    font-weight: 400;
+    color: black; /* Black font for the list items */
+}
+
+.degree {
+    font-weight: bold;
+    display: block; 
+    margin-top: 1em; 
+}
+
+.school {
     display: block;
-    font-style: italic;
-    color: black;
-    margin-top: 5px;
+    margin-bottom: 0.3em;
 }
 
-/* Reset any link colors to black */
-a {
-    color: black;
-    text-decoration: none;
+/* Timeline Styles */
+.timeline {
+    border-left: 3px solid #4CAF50;
+    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
 }
 
-/* Additional styling for small devices */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .section-title {
-        font-size: 1.2em;
-    }
-
-    .section-content {
-        padding: 15px;
-    }
+.timeline-entry {
+    margin-top: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
 }
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: 0;
+}
+
+.timeline-content h3,
+.timeline-content p {
+    margin: 5px 0;
+    color: #333; 
+}
+
+/* Transition for smooth toggling of description */
+.timeline-content p {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for hiding/showing description */
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
