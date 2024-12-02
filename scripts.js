@@ -12,62 +12,71 @@ document.addEventListener('DOMContentLoaded', function() {
     // Experience Section: Populate Timeline
     const timelineData = [
         {
-            date: '05/2022 - 10/2024',
-            title: 'Jr. Cloud Engineer',
+            date: '2022 – 2024',
+            title: 'Application Support Engineer',
             company: 'Miranda Healthcare',
-            location: 'Flossmoor, IL, USA',
-            description: `
-                <ul>
-                    <li>Designed and deployed full-stack lead/recruitment application leveraging EC2, RDS, S3, Lambda, DynamoDB, and Amplify.</li>
-                    <li>Delivered secure remote desktop solutions using WorkSpaces, WorkLink, IAM, S3, and Amplify.</li>
-                    <li>Designed an analytics pipeline using Redshift, QuickSight, Glue, and Data Pipeline for real-time staffing metrics.</li>
-                    <li>Managed IaC leveraging Terraform and automated deployment/testing with Jenkins or GitHub Actions.</li>
-                    <li>Developed a project management platform utilizing WorkDocs, WorkMail, DynamoDB, AppStream, and SNS.</li>
-                    <li>Utilized CloudWatch for monitoring VPC resources and Grafana for performance dashboards.</li>
-                </ul>
-            `
+            location: 'Chicago, IL, USA',
+            description: 
+                `<ul>
+                    <li>Proactively monitored the SEIM for the hybrid cloud environment and responded to alerts with appropriate actions to maintain SLA’s.</li>
+                    <li>Leveraged Grafana to create custom dashboards, enabling real-time visibility into application and system performance.</li>
+                    <li>Managed the deployment and configuration of cloud applications with Docker, K8’s, Terraform, and Jenkins for the entire organization.</li>
+                    <li>Ensured the stability and reliability of critical cloud resources by proactively monitoring CloudWatch for health and performance metrics.</li>
+                    <li>Developed and implemented bash scripts to streamline routine tasks and reduce the need for manual effort.</li>
+                    <li>Supported distributed system architecture, including EC2, AWS RDS, API Gateway, Route53, Autoscaling, ELB’s, and Lambda.</li>
+                    <li>Debugged issues related to middleware components such as gateways, message queues, and application servers via secure shell.</li>
+                    <li>Provided day-to-day support for production environments, including troubleshooting issues, and performing system upgrades.</li>
+                    <li>Collaborated with the IT Service Desk to efficiently triage and escalate incidents, ensuring timely and effective resolutions.</li>
+                    <li>Utilized SQL to query server and application logs, identifying health and performance issues by analyzing key metrics that impact infrastructure reliability i.e. resource utilization, error rates, and response times.</li>
+                </ul>`
         },
         {
-            date: '12/2019 - 04/2022',
+            date: '2019 – 2022',
             title: 'IT Project Manager',
             company: 'Minor-Morris Ltd.',
             location: 'Joliet, IL, USA',
-            description: `
-                <ul>
-                    <li>Developed a detailed 2-year cloud migration roadmap for all service areas.</li>
-                    <li>Worked with APN solution architects to design cloud architecture while maintaining compliance.</li>
-                    <li>Provided guidance on leveraging AWS services like EC2, EKS, S3, RDS, and Lambda.</li>
-                    <li>Migrated legacy systems to Kubernetes-managed Dockerized microservices.</li>
-                    <li>Implemented IoT-enabled vehicle tracking tools using AWS IoT Core and S3.</li>
-                    <li>Ensured compliance with AWS IAM, KMS, and CloudTrail for secure role-based access control.</li>
-                </ul>
-            `
+            description: 
+                `<ul>
+                    <li>Led Agile transformation and guided teams through Scrum implementation, resulting in improved team collaboration and performance.</li>
+                    <li>Developed a detailed 2-year cloud migration roadmap for all service areas (task management, booking system, fleet tools), ensuring business continuity and clear communication of project objectives.</li>
+                    <li>Worked with APN solution architects to design cloud architecture that met performance and budget requirements for the business.</li>
+                    <li>Provided guidance on leveraging AWS services such as EC2, EKS, S3, RDS, and Lambda to create scalable, secure, and cost-effective solutions for the business.</li>
+                    <li>Migrated the legacy task management system to a Kubernetes-managed (Docker runtime) microservices architecture in 3 months.</li>
+                    <li>Facilitated communication between cross-functional teams and Product Owners to ensure clarity in requirements and expectations.</li>
+                    <li>Employed Scrum methodologies wherever possible to leverage the adaptability of dynamic project environments.</li>
+                    <li>Utilized problem-solving skills to resolve issues, improving team productivity and project delivery timelines.</li>
+                </ul>`
         },
         {
-            date: '11/2018 - 12/2019',
+            date: '2018 – 2019',
             title: 'Brand Manager',
             company: 'Rust-Oleum',
             location: 'Vernon Hills, IL, USA',
-            description: `
-                <ul>
-                    <li>Led initiatives to foster innovation across industrial platforms using Agile methodologies.</li>
-                    <li>Drove financial performance of a $90MM portfolio using data-driven strategies.</li>
-                    <li>Analyzed consumer behavior with Power BI, transforming data into actionable insights.</li>
-                </ul>
-            `
+            description: 
+                `<ul>
+                    <li>Led initiatives to foster innovation across industrial platforms, aligning with corporate strategies and stakeholder needs for strategic ideation and commercialization of new industrial products.</li>
+                    <li>Drove the financial performance of a $90MM portfolio with data-driven strategies, utilizing multiple CRM tools (e.g., SAP, Salesforce Reports, Salesforce Dashboard, DAX).</li>
+                    <li>Facilitated communication between sales, R&D, and brand management to ensure alignment for ongoing strategic projects.</li>
+                    <li>Leveraged Power BI to analyze consumer behavior and sales trends from consumer reports, transforming raw data into actionable insights for strategic direction.</li>
+                    <li>Employed agile methods to create a process for streamlining the development and improvement of the industrial product line.</li>
+                    <li>Directed brand messaging and digital strategy, leveraging digital campaigns designed to strengthen market position.</li>
+                </ul>`
         },
         {
-            date: '11/2015 - 10/2018',
+            date: '2015 – 2018',
             title: 'Technical Product Manager',
             company: 'Fuchs',
             location: 'Harvey, IL, USA',
-            description: `
-                <ul>
-                    <li>Managed P&L for a 225-SKU product portfolio generating $30MM annual revenue.</li>
-                    <li>Developed communication materials to educate customers and sales teams.</li>
-                    <li>Visited customer facilities for product presentations and market data collection.</li>
-                </ul>
-            `
+            description: 
+                `<ul>
+                    <li>Managed the P&L for a product portfolio consisting of 225 SKUs, driving $30MM in annual revenue using analytical tools (e.g., ATD, SAP, Salesforce Analytics).</li>
+                    <li>Developed communication materials to educate customers and sales teams on the value-add positioning for the 225 SKUs in the industrial portfolio.</li>
+                    <li>Supported digital marketing strategies utilizing marketing tools (e.g., Adobe Suite, Placeit, Canva, Meta for Business) to grow customer engagement for all 190 industrial products.</li>
+                    <li>Served as a technical expert, effectively translating complex technical concepts into clear, actionable insights for non-technical stakeholders.</li>
+                    <li>Facilitated communication between technical teams and business units to ensure alignment, understanding, and success in implementing technical solutions.</li>
+                    <li>Updated sales tools with the latest communication technologies (e.g., Adobe Suite, Canva).</li>
+                    <li>Visited customers’ facilities for product presentations and collected relevant market data. (Travel 25-30%)</li>
+                </ul>`
         }
     ];
 
