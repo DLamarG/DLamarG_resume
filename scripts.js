@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `<ul class="experience-list">
                     <li><span class="bullet"></span> Proactively monitored the hybrid cloud environment and responded to alerts with appropriate actions to maintain SLA’s.</li>
                     <li><span class="bullet"></span> Leveraged Grafana to create custom dashboards, enabling real-time visibility into application and system performance.</li>
-                    <li><span class="bullet"></span> Managed the deployment and configuration of cloud applications with Docker, K8’s, Terraform, and Jenkins for the entire organization.</li>
+                    <li><span class="bullet"></span> Managed the deployment and configuration of cloud applications with Docker, EKS, Terraform, and Jenkins for the entire organization.</li>
                     <li><span class="bullet"></span> Ensured the stability and reliability of critical cloud resources by proactively monitoring CloudWatch for health and performance metrics.</li>
                     <li><span class="bullet"></span> Developed and implemented bash scripts to streamline routine tasks and reduce the need for manual effort.</li>
                     <li><span class="bullet"></span> Supported distributed system architecture, including EC2, AWS RDS, API Gateway, Route53, Autoscaling, ELB’s, and Lambda.</li>
